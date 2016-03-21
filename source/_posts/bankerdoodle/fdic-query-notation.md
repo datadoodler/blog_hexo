@@ -1,6 +1,7 @@
 ---
 title: FDIC Query Notation
 date: 2016-03-14 06:50:08
+author: Kent Merrell
 comments: true
 tags: 
 - BankerDoodle

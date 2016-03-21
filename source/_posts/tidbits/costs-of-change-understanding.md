@@ -18,4 +18,4 @@ Code that is less abstract is more likely to break something somewhere when you 
 
 This came from a conference where the speaker was making the case that sometimes it's better to not be super object oriented. (I need to get a reference).
 
-<div style="width: 480px; height: 360px; margin: 10px; position: relative;"><iframe allowfullscreen frameborder="0" style="width:480px; height:360px" src="https://www.lucidchart.com/documents/embeddedchart/e0d0d3d6-c71c-4ded-a616-d58d15dd2666" id="sKB4v.v0jPgb"></iframe></div>
+<div style="width: 600px; height: 480px; margin: 10px; position: relative;"><iframe allowfullscreen frameborder="0" style="width:600px; height:480px" src="https://www.lucidchart.com/documents/embeddedchart/e0d0d3d6-c71c-4ded-a616-d58d15dd2666" id="sKB4v.v0jPgb"></iframe></div>

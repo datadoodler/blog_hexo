@@ -1,6 +1,7 @@
 ---
 title: BankerDoodle Intro
 date: 2017-03-14 06:50:08
+author: Kent Merrell
 comments: false
 tags: 
 - BankerDoodle
