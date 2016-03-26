@@ -6,7 +6,7 @@ comments: true
 tags: 
   - Angular
   - Asynchronous
-  - Promise
+  - Promises
 categories: 
 - Tech Sketch
 ---

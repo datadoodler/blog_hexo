@@ -12,7 +12,7 @@ categories:
 
 I developed this dynamic grid that let's the user merge and unmerge cells in order to give them the ability to arrange the page elements any way they want.
  
-(I wish I had known about gridster <em>before</em> I did this.)
+(I wish I had known about gridster <em>before</em> I coded this.)
 <!-- More -->
  
  
