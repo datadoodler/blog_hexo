@@ -11,7 +11,9 @@ tags:
 categories: 
 - Tech Sketch
 ---
+Demo: http://datadoodler.github.io/ts-05-progressbar-bound-to-promise-array
 
+Source: https://github.com/datadoodler/ts-05-progressbar-bound-to-promise-array/
 
 #### Progressbar Bound to Promise Array
 The application is periodically caching images (asynchronously). Whenever images are being pulled over the wire we want to show the progressbar (angular bootstrap directive) and the percentage complete of the images. Progressbar doesn't need to show the percent downloaded of a single image, but the percentage of the list of images that have completed (or failed) download.  
