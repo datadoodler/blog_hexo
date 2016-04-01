@@ -21,6 +21,8 @@ Basic webpack, and (optionally) the dev server, which provides a basic express a
 npm-install --save-dev webpack, webpack-dev-server
 ````
 
+<!-- More -->
+
 Loaders: Webpack assumes all files are javascript unless additional loaders are invoked to handle other file types.
 
 npm install --save-dev css-loader style-loader
