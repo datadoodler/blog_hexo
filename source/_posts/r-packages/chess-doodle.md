@@ -37,6 +37,8 @@ pathPrior(piece = "knight", square = "e5")
 
 The pawn is the only piece unable to move backwards, and its *direction* depends on its color.
 
+<!-- More -->
+
 ```{r}
 pathPrior(piece = "black pawn", square = "e5")
 pathPrior(piece = "white pawn", square = "e5")
