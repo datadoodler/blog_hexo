@@ -2,13 +2,13 @@
 title: Introduction to ChessDoodle Functions
 date: 2016-03-30 06:50:08
 author: Josh Merrell
-comments: false
-tags:
+comments: true
+tags: 
 - BankerDoodle
 - R Packages
 - Analytics
 - Chess
-categories:
+categories: 
 - R Packages
 ---
 

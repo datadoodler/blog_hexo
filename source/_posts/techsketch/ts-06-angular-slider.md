@@ -9,7 +9,7 @@ tags:
   - rzslider
   - Angular-ui
 categories: 
-- Tech Sketch
+  - Tech Sketch
 ---
 
 Demo: [http://datadoodler.github.io/ts-06-angular-slider]
