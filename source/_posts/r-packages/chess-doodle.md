@@ -1,8 +1,15 @@
 ---
-title: "Introduction to ChessDoodle Functions"
-author: "Josh Merrell"
-date: "March 30, 2016"
-output: html_document
+title: Introduction to ChessDoodle Functions
+date: 2016-03-30 06:50:08
+author: Josh Merrell
+comments: false
+tags:
+- BankerDoodle
+- R Packages
+- Analytics
+- Chess
+categories:
+- R Packages
 ---
 
 This workspace is geared to help the user to explore and think about the chessboard. It is available [here](https://github.com/brantmerrell/chessdoodles/blob/master/chessDoodles.RData):
