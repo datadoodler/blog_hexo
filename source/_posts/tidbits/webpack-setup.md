@@ -6,8 +6,10 @@ tags:
 - Webpack
 - JavaScript
 categories: 
-- TidBits
+- Tidbits
 ---
+
+Source: [https://github.com/datadoodler/ts-00-active-webpack.git]
 
 #### Webpack Notes
 

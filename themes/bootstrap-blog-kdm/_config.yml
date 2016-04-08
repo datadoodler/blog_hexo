@@ -18,7 +18,7 @@ widgets:
 - archive
 - recent_posts
 about_widget_content: >
- <p>Kent and Josh Merrell are a father/son team that think the world is a better place when knowledge is freely and openly shared.</p>
+ <p>Kent and Josh Merrell are a father/son team who believe the world is a better place when knowledge is freely and openly shared.</p>
 
 # widget behavior
 archive_type: 'monthly'
