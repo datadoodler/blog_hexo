@@ -69,3 +69,16 @@ theme: bootstrap-blog-kdm
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type:
+
+
+theme_config:
+  # Header
+  navbar_brand: <img src="/navbrand.png">
+  menu:
+    Home: index.html
+    Archives: archives/
+    'Another Page': page/index.html
+  widgets:
+   - about
+   - category
+   - tagcloud

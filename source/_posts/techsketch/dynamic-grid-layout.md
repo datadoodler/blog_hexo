@@ -1,13 +1,15 @@
 ---
 title: Dynamic Grid Layout
-date: 2014-11-01 06:50:08
+date: 2014-08-01 06:50:08
 author: Kent Merrell
 comments: true
 tags: 
   - Angular
   - Wireframes
+  - JavaScript
+  - Analysis
 categories: 
-- Tech Sketch
+- Skills Demo
 ---
 
 I developed this dynamic grid that let's the user merge and unmerge cells in order to give them the ability to arrange the page elements any way they want.

@@ -7,8 +7,9 @@ tags:
   - Angular
   - Asynchronous
   - Promises
+  - JavaScript
 categories: 
-- Tech Sketch
+- Skills Demo
 ---
 
 The workings of this directive are illustrated in the following 3 scenarios. In each scenario, after the user initially presses 'save', the directive makes a call to the address validation service, injects appropriate html (if needed), waits for a user response, and updates the address fields accordingly.

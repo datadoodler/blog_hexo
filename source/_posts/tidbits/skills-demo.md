@@ -11,7 +11,7 @@ tags:
   - NPM
   - Demo
 categories: 
-  - Tidbits
+  - Skills Demo
 ---
 
 
@@ -23,7 +23,7 @@ This document is intended to be a guided tour through some of my code. It will p
 <!-- More -->
 
 # Example: fdic-sdi-manager
-The purpose of this project is to extract data from quarterly zip files and persist it to a nosql database in an 'on-demand' fashion. I don't want to persist *all* the data, but I don't know before-hand which variables I want to persist. 
+The purpose of this project is to extract data from quarterly zip files and persist it to a nosql database in an 'on-demand' fashion. I don't want to persist *all* the data, but I don't know before-hand which variables I want to persist. The data that is persisted will be available via an aws api gateway.
 
 ### Source code:
 https://github.com/datadoodler/fdic-sdi-manager.git 
@@ -44,8 +44,11 @@ The FDIC releases data for public consumption in the form of quarterly zip files
 
 ### NodeJS
 I'm using node version 5.3.0, which has native support for all the es6 features I was compelled to use. Though this project is published to an npm repository it is not meant for general distribution and will be  consumed in a setting where I have explicit control of the node environment (namely, my own AWS EC2 instance).
+
 ### tdd with mocha/chai/wallaby
-I'm addicted to test-first development. It is how I know what to code, without getting too sidetracked (and overwhelmed) with "it *might* need to to *x* someday" mindset. It helps me organize my thoughts and more expeditiously arrive at an efficient architecture.
+I'm addicted to test-first development. It is how I know what to code, without getting too sidetracked (and overwhelmed) with "it *might* need to to *x* someday" mindset. It helps me organize my thoughts and more expeditiously arrive at an efficient architecture. 
+
+Mocha and chai are fairly standard, but you may not be so familiar with Wallaby.  Wallaby is an IDE plugin (in this case WebStorm) that brings the results of your unit test directly on to your editor window. You see the results of your tests *as you type*. The image below shows my WebStorm editor with 4 panes visible. The far right pane is my unit test document. The middle pane is the code being tested. Notice the green dots next to the line numbers. This indicates that that particular line of code has run successfully and the unit test has returned a 'pass'. The bottom pane is an embedded terminal. In this case it is showing the results of having just run the mocha test suite.
 
 ![](/blog/static/TDD-Fdic.png )
 ### es6 classes
@@ -91,6 +94,15 @@ function *FdicSdiQuarter_factory(options) {
     }
 };
 ```
+Notice the asterisk in the signature of the function in line 1, function \*FdicSdiQuarter_factory. The asterisk indicates this is an *ES6 Generator Function*. This means it will allow special asynchronous handling via the *yield* keyword. Notice lines 12 and 14 set property values to the results of asynchronous functions. No callback or .then statements (at least at this point). 
+
+The convenience of controlling the flow of asynchronous functions with *yield* comes with the small cost of a dependence on a co-routine library. In this case I am using the *co* library. I use it to wrap the generator function like this:
+
+
+```
+var fdicSdiQuarter = co(FdicSdiQuarter_factory(options));
+```
+
 
 
 ### nosql database
@@ -99,7 +111,10 @@ I use nedb quite liberally to persist state. I tend to use many smaller tables t
 
 
 ### npm package publish, consume
-This project is published as an npm repo. Though it's not really necessary, it's a really nice convenience to be able to include it wherever I want. These classes will eventually be used in admin ui screens. 
+This project is published a publicly accessible npm repo. Though it's not really necessary, it's a very nice convenience to be able to include it wherever I want. These classes will eventually be consumed in admin ui screens and host on an aws ec2 instance. The npm repo can be installed via
+ ```
+ npm install fdic-sdi-manager
+ ```
 
 
 

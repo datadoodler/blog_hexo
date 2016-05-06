@@ -8,6 +8,7 @@ tags:
   - Directives
   - rzslider
   - Angular-ui
+  - JavaScript
 categories: 
   - Tech Sketch
 ---

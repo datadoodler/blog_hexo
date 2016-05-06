@@ -8,6 +8,7 @@ tags:
   - Promises
   - Bootstrap
   - Asynchronous
+  - JavaScript
 categories: 
 - Tech Sketch
 ---

@@ -7,6 +7,7 @@ tags:
   - Angular
   - Project Management
   - Wireframes
+  - JavaScript
 categories: 
 - Tech Sketch
 ---
